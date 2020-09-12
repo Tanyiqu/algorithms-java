@@ -1,20 +1,16 @@
+/**
+ * 冒泡排序
+ */
+
 package com.tanyiqu.algorithm.sorting;
 
-import com.tanyiqu.util.Comparator;
-import org.junit.Test;
+public class BubbleSort extends Sort {
 
-import java.util.Arrays;
-
-public class BubbleSort implements Sort {
-
-    int[] array = new int[]{25, 66, 3, 64, 23, 45, 35, 15, 45, 23, 89, 64};
-    Comparator comparator = new Comparator();
-
-    @Test
-    public void test() {
-        System.out.println(Arrays.toString(array));
-        sort();
-        System.out.println(Arrays.toString(array));
+    public static void main(String[] args) {
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.printArray();
+        bubbleSort.sort();
+        bubbleSort.printArray();
     }
 
     @Override
