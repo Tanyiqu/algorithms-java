@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import com.tanyiqu.util.Comparator;
 
-public abstract class Sort {
+public abstract class AbstractSort {
 
     // 默认比较器
     static Comparator comparator = new Comparator();

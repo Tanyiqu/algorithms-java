@@ -4,7 +4,7 @@
 
 package com.tanyiqu.algorithm.sorting;
 
-public class BubbleSort extends Sort {
+public class BubbleSort extends AbstractSort {
 
     public static void main(String[] args) {
         BubbleSort bubbleSort = new BubbleSort();
