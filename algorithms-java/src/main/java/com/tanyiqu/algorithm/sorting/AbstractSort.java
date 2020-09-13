@@ -1,30 +1,26 @@
 package com.tanyiqu.algorithm.sorting;
 
-import java.util.Arrays;
-
 import com.tanyiqu.util.Comparator;
 import com.tanyiqu.util.IntegerUtil;
 
 public abstract class AbstractSort {
 
     // 默认比较器
-    static Comparator comparator = new Comparator();
+    Comparator comparator = new Comparator();
 
-    // 默认待排序数组
-    static Integer[] array = IntegerUtil.randIntegerArray(12, 1, 100);
-
-    
     /**
      * 排序函数
      */
-    abstract void sort();
-
+    abstract void sort(Integer[] array);
 
     /**
-     * 打印当前数组
+     * 测试排序
      */
-    void printArray() {
-        System.out.println(Arrays.toString(array));
+    void test() {
+        Integer[] array = IntegerUtil.randIntegerArray(12, 10, 100);
+        IntegerUtil.print(array);
+        sort(array);
+        IntegerUtil.print(array);
     }
 
 }

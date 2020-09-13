@@ -18,14 +18,12 @@ public class Comparator {
 
     }
 
-
     public int compare(double a, double b) {
         if (a == b) {
             return 0;
         }
         return a > b ? 1 : -1;
     }
-
 
     public boolean lessThan(double a, double b) {
         return compare(a, b) < 0;
