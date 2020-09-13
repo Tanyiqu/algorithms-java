@@ -13,7 +13,8 @@ public class SelectionSort extends AbstractSort {
         for (int end = length - 1; end > 0; end--) {
             int maxIndex = 0;
             for (int begin = 1; begin <= end; begin++) {
-                if (array[begin] > array[maxIndex]) {
+                // >=保证排序的稳定性，但不保证所有的情况都是稳定
+                if (array[begin] >= array[maxIndex]) {
                     maxIndex = begin;
                 }
             }
