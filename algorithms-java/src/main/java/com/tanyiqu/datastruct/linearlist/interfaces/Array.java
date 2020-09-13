@@ -1,7 +1,8 @@
 package com.tanyiqu.datastruct.linearlist.interfaces;
 
+import java.io.Serializable;
 
-public interface Array<Element> {
+public interface Array<Element> extends Serializable {
 
     int size();
 
