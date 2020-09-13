@@ -12,7 +12,7 @@ public class BubbleSort extends AbstractSort {
     }
 
     @Override
-    public void sort(Integer[] array) {
+    void sort(Integer[] array) {
         int length = array.length;
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length - i - 1; j++) {
