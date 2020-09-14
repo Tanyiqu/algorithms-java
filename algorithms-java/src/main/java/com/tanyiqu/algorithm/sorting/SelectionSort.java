@@ -1,5 +1,7 @@
 package com.tanyiqu.algorithm.sorting;
 
+import java.util.List;
+
 public class SelectionSort<E extends Comparable<E>> extends AbstractSort<E> {
 
     public static void main(String[] args) {
@@ -22,6 +24,12 @@ public class SelectionSort<E extends Comparable<E>> extends AbstractSort<E> {
             array[end] = array[maxIndex];
             array[maxIndex] = temp;
         }
+    }
+
+    @Override
+    void sort(List<E> list) {
+        // TODO Auto-generated method stub
+
     }
 
 }

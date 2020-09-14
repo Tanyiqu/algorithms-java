@@ -4,6 +4,8 @@
 
 package com.tanyiqu.algorithm.sorting;
 
+import java.util.List;
+
 public class BubbleSort<E extends Comparable<E>> extends AbstractSort<E> {
 
     public static void main(String[] args) {
@@ -24,5 +26,11 @@ public class BubbleSort<E extends Comparable<E>> extends AbstractSort<E> {
                 }
             }
         }
+    }
+
+    @Override
+    void sort(List<E> list) {
+        // TODO Auto-generated method stub
+
     }
 }
