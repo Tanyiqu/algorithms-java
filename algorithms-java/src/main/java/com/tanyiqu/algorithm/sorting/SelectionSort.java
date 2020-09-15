@@ -2,19 +2,12 @@ package com.tanyiqu.algorithm.sorting;
 
 import java.util.List;
 
-import com.tanyiqu.util.IntegerUtil;
-
 public class SelectionSort<E extends Comparable<E>> extends AbstractSort<E> {
 
     public static void main(String[] args) {
         SelectionSort<Integer> selectionSort = new SelectionSort<>();
-        selectionSort.test(selectionSort);
-
-        List<Integer> list = IntegerUtil.randIntegerList(12, 10, 100);
-        IntegerUtil.print(list);
-        selectionSort.sort(list);
-        IntegerUtil.print(list);
-
+        selectionSort.testArray(selectionSort);
+        selectionSort.testList(selectionSort);
     }
 
     @Override

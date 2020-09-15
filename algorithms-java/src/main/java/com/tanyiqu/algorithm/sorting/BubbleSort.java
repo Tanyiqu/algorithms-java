@@ -6,19 +6,13 @@ package com.tanyiqu.algorithm.sorting;
 
 import java.util.List;
 
-import com.tanyiqu.util.IntegerUtil;
 
 public class BubbleSort<E extends Comparable<E>> extends AbstractSort<E> {
 
     public static void main(String[] args) {
         BubbleSort<Integer> bubbleSort = new BubbleSort<>();
-        bubbleSort.test(bubbleSort);
-
-        List<Integer> list = IntegerUtil.randIntegerList(12, 10, 100);
-        IntegerUtil.print(list);
-        bubbleSort.sort(list);
-        IntegerUtil.print(list);
-
+        bubbleSort.testArray(bubbleSort);
+        bubbleSort.testList(bubbleSort);
     }
 
     @Override
