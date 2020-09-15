@@ -2,7 +2,6 @@ package com.tanyiqu.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -40,6 +39,7 @@ public class IntegerUtil {
 
     /**
      * 返回一个随机的从lower到upper的含有num个元素的整数列表
+     * 
      * @param num
      * @param lower
      * @param upper
