@@ -75,4 +75,20 @@ public class IntegerUtil {
         System.out.println(sb);
     }
 
+    /**
+     * 
+     * 判断数组是否为升序
+     * 
+     * @param array
+     * @return
+     */
+    public static boolean isAscend(Integer[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] > array[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
