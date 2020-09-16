@@ -8,10 +8,9 @@ import java.util.List;
 
 public class SelectionSort<E extends Comparable<E>> extends AbstractSort<E> {
 
-    public static void main(String[] args) {
-        SelectionSort<Integer> selectionSort = new SelectionSort<>();
-        selectionSort.testArray(selectionSort);
-        selectionSort.testList(selectionSort);
+    @Override
+    String name() {
+        return "选择排序";
     }
 
     @Override
@@ -47,5 +46,4 @@ public class SelectionSort<E extends Comparable<E>> extends AbstractSort<E> {
             list.set(maxIndex, temp);
         }
     }
-
 }

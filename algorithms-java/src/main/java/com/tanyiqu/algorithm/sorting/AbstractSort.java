@@ -27,6 +27,13 @@ public abstract class AbstractSort<E extends Comparable<E>> {
     }
 
     /**
+     * 排序名称
+     * 
+     * @return 排序名称
+     */
+    abstract String name();
+
+    /**
      * 排序函数
      */
     abstract void sort(E[] array);

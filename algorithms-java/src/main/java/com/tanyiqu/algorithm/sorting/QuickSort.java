@@ -4,10 +4,9 @@ import java.util.List;
 
 public class QuickSort<E extends Comparable<E>> extends AbstractSort<E> {
 
-    public static void main(String[] args) {
-        QuickSort<Integer> quickSort = new QuickSort<>();
-        quickSort.testArray(quickSort);
-        quickSort.testList(quickSort);
+    @Override
+    String name() {
+        return "快速排序";
     }
 
     @Override
@@ -34,7 +33,6 @@ public class QuickSort<E extends Comparable<E>> extends AbstractSort<E> {
         int pivot = pivot(array, begin, end);
         qsort(array, begin, pivot - 1);
         qsort(array, pivot + 1, end);
-
     }
 
     /**
@@ -124,5 +122,4 @@ public class QuickSort<E extends Comparable<E>> extends AbstractSort<E> {
         list.set(begin, pviot);
         return begin;
     }
-
 }

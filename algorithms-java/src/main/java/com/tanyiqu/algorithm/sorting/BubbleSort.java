@@ -8,10 +8,9 @@ import java.util.List;
 
 public class BubbleSort<E extends Comparable<E>> extends AbstractSort<E> {
 
-    public static void main(String[] args) {
-        BubbleSort<Integer> bubbleSort = new BubbleSort<>();
-        bubbleSort.testArray(bubbleSort);
-        bubbleSort.testList(bubbleSort);
+    @Override
+    String name() {
+        return "冒泡排序";
     }
 
     @Override
@@ -40,6 +39,5 @@ public class BubbleSort<E extends Comparable<E>> extends AbstractSort<E> {
                 }
             }
         }
-
     }
 }
