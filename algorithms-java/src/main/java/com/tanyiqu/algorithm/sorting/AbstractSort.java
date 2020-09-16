@@ -37,7 +37,7 @@ public abstract class AbstractSort<E extends Comparable<E>> {
      * 测试排序
      */
     void testArray(AbstractSort<Integer> abstractSort) {
-        Integer[] array = IntegerUtil.randIntegerArray(12, 10, 100);
+        Integer[] array = IntegerUtil.randIntegerArray(20, 1, 100);
         IntegerUtil.print(array);
         abstractSort.sort(array);
         IntegerUtil.print(array);
@@ -47,7 +47,7 @@ public abstract class AbstractSort<E extends Comparable<E>> {
      * 测试排序
      */
     void testList(AbstractSort<Integer> abstractSort) {
-        List<Integer> list = IntegerUtil.randIntegerList(12, 10, 100);
+        List<Integer> list = IntegerUtil.randIntegerList(20, 1, 100);
         IntegerUtil.print(list);
         abstractSort.sort(list);
         IntegerUtil.print(list);
