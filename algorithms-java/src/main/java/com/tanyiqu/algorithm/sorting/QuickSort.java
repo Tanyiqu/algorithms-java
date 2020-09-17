@@ -1,3 +1,7 @@
+/**
+ * 快速排序
+ */
+
 package com.tanyiqu.algorithm.sorting;
 
 import java.util.List;
