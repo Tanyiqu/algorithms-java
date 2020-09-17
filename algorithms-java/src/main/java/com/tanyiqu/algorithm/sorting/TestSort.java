@@ -18,6 +18,7 @@ public class TestSort {
 
     static void test(List<AbstractSort> list) {
         Integer[] array = IntegerUtil.randIntegerArray(10000, 1, 10000);
+        System.out.println("----------------------------------");
         for (AbstractSort sort : list) {
 
             long begintime = System.currentTimeMillis();

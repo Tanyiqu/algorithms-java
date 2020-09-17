@@ -6,7 +6,7 @@ package com.tanyiqu.algorithm.sorting;
 
 import java.util.List;
 
-public class BubbleSort<E extends Comparable<E>> extends AbstractSort<E> {
+public class BubbleSort<T extends Comparable<T>> extends AbstractSort<T> {
 
     @Override
     String name() {
@@ -14,12 +14,12 @@ public class BubbleSort<E extends Comparable<E>> extends AbstractSort<E> {
     }
 
     @Override
-    void sort(E[] array) {
+    void sort(T[] array) {
         int length = array.length;
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length - i - 1; j++) {
                 if (greaterThan(array[j], array[j + 1])) {
-                    E temp = array[j];
+                    T temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
                 }
@@ -28,12 +28,12 @@ public class BubbleSort<E extends Comparable<E>> extends AbstractSort<E> {
     }
 
     @Override
-    void sort(List<E> list) {
+    void sort(List<T> list) {
         int length = list.size();
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length - i - 1; j++) {
                 if (greaterThan(list.get(j), list.get(j + 1))) {
-                    E temp = list.get(j);
+                    T temp = list.get(j);
                     list.set(j, list.get(j + 1));
                     list.set(j + 1, temp);
                 }

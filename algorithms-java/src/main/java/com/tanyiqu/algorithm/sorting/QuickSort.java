@@ -2,7 +2,7 @@ package com.tanyiqu.algorithm.sorting;
 
 import java.util.List;
 
-public class QuickSort<E extends Comparable<E>> extends AbstractSort<E> {
+public class QuickSort<T extends Comparable<T>> extends AbstractSort<T> {
 
     @Override
     String name() {
@@ -10,12 +10,12 @@ public class QuickSort<E extends Comparable<E>> extends AbstractSort<E> {
     }
 
     @Override
-    void sort(E[] array) {
+    void sort(T[] array) {
         qsort(array, 0, array.length - 1);
     }
 
     @Override
-    void sort(List<E> list) {
+    void sort(List<T> list) {
         qsort(list, 0, list.size() - 1);
     }
 
@@ -26,7 +26,7 @@ public class QuickSort<E extends Comparable<E>> extends AbstractSort<E> {
      * @param begin
      * @param end
      */
-    void qsort(E[] array, int begin, int end) {
+    void qsort(T[] array, int begin, int end) {
         if (end - begin < 2) {
             return;
         }
@@ -42,7 +42,7 @@ public class QuickSort<E extends Comparable<E>> extends AbstractSort<E> {
      * @param begin
      * @param end
      */
-    void qsort(List<E> list, int begin, int end) {
+    void qsort(List<T> list, int begin, int end) {
         if (end - begin < 2) {
             return;
         }
@@ -59,8 +59,8 @@ public class QuickSort<E extends Comparable<E>> extends AbstractSort<E> {
      * @param end
      * @return
      */
-    int pivot(E[] array, int begin, int end) {
-        E pviot = array[begin];
+    int pivot(T[] array, int begin, int end) {
+        T pviot = array[begin];
         while (begin < end) {
             // 右 -> 左
             while (begin < end) {
@@ -95,8 +95,8 @@ public class QuickSort<E extends Comparable<E>> extends AbstractSort<E> {
      * @param end
      * @return
      */
-    int pivot(List<E> list, int begin, int end) {
-        E pviot = list.get(begin);
+    int pivot(List<T> list, int begin, int end) {
+        T pviot = list.get(begin);
         while (begin < end) {
             // 右 -> 左
             while (begin < end) {

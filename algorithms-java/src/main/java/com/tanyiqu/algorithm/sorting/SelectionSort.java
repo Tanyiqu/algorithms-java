@@ -6,7 +6,7 @@ package com.tanyiqu.algorithm.sorting;
 
 import java.util.List;
 
-public class SelectionSort<E extends Comparable<E>> extends AbstractSort<E> {
+public class SelectionSort<T extends Comparable<T>> extends AbstractSort<T> {
 
     @Override
     String name() {
@@ -14,7 +14,7 @@ public class SelectionSort<E extends Comparable<E>> extends AbstractSort<E> {
     }
 
     @Override
-    void sort(E[] array) {
+    void sort(T[] array) {
         int length = array.length;
         for (int end = length - 1; end > 0; end--) {
             int maxIndex = 0;
@@ -24,14 +24,14 @@ public class SelectionSort<E extends Comparable<E>> extends AbstractSort<E> {
                     maxIndex = begin;
                 }
             }
-            E temp = array[end];
+            T temp = array[end];
             array[end] = array[maxIndex];
             array[maxIndex] = temp;
         }
     }
 
     @Override
-    void sort(List<E> list) {
+    void sort(List<T> list) {
         int length = list.size();
         for (int end = length - 1; end > 0; end--) {
             int maxIndex = 0;
@@ -41,7 +41,7 @@ public class SelectionSort<E extends Comparable<E>> extends AbstractSort<E> {
                     maxIndex = begin;
                 }
             }
-            E temp = list.get(end);
+            T temp = list.get(end);
             list.set(end, list.get(maxIndex));
             list.set(maxIndex, temp);
         }

@@ -4,25 +4,25 @@ import java.util.List;
 
 import com.tanyiqu.util.IntegerUtil;
 
-public abstract class AbstractSort<E extends Comparable<E>> {
+public abstract class AbstractSort<T extends Comparable<T>> {
 
-    boolean equal(E a, E b) {
+    boolean equal(T a, T b) {
         return a.compareTo(b) == 0;
     }
 
-    boolean greaterThan(E a, E b) {
+    boolean greaterThan(T a, T b) {
         return a.compareTo(b) > 0;
     }
 
-    boolean greaterThanOrEqual(E a, E b) {
+    boolean greaterThanOrEqual(T a, T b) {
         return a.compareTo(b) >= 0;
     }
 
-    boolean lessThan(E a, E b) {
+    boolean lessThan(T a, T b) {
         return a.compareTo(b) < 0;
     }
 
-    boolean lessThanOrEqual(E a, E b) {
+    boolean lessThanOrEqual(T a, T b) {
         return a.compareTo(b) <= 0;
     }
 
@@ -36,9 +36,9 @@ public abstract class AbstractSort<E extends Comparable<E>> {
     /**
      * 排序函数
      */
-    abstract void sort(E[] array);
+    abstract void sort(T[] array);
 
-    abstract void sort(List<E> list);
+    abstract void sort(List<T> list);
 
     /**
      * 测试排序
