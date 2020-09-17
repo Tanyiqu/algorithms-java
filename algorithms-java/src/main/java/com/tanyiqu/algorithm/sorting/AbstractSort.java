@@ -31,14 +31,14 @@ public abstract class AbstractSort<T extends Comparable<T>> {
      * 
      * @return 排序名称
      */
-    abstract String name();
+    public abstract String name();
 
     /**
      * 排序函数
      */
-    abstract void sort(T[] array);
+    public abstract void sort(T[] array);
 
-    abstract void sort(List<T> list);
+    public abstract void sort(List<T> list);
 
     /**
      * 测试排序

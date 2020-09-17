@@ -9,12 +9,12 @@ import java.util.List;
 public class BubbleSort<T extends Comparable<T>> extends AbstractSort<T> {
 
     @Override
-    String name() {
+    public String name() {
         return "冒泡排序";
     }
 
     @Override
-    void sort(T[] array) {
+    public void sort(T[] array) {
         int length = array.length;
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length - i - 1; j++) {
@@ -28,7 +28,7 @@ public class BubbleSort<T extends Comparable<T>> extends AbstractSort<T> {
     }
 
     @Override
-    void sort(List<T> list) {
+    public void sort(List<T> list) {
         int length = list.size();
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length - i - 1; j++) {

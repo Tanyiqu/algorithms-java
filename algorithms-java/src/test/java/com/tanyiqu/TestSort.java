@@ -1,9 +1,13 @@
-package com.tanyiqu.algorithm.sorting;
+package com.tanyiqu;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.tanyiqu.algorithm.sorting.AbstractSort;
+import com.tanyiqu.algorithm.sorting.*;
 import com.tanyiqu.util.IntegerUtil;
+
+import org.junit.Test;
 
 @SuppressWarnings("all")
 public class TestSort {

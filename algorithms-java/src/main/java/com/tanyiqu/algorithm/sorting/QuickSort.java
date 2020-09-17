@@ -5,17 +5,17 @@ import java.util.List;
 public class QuickSort<T extends Comparable<T>> extends AbstractSort<T> {
 
     @Override
-    String name() {
+    public String name() {
         return "快速排序";
     }
 
     @Override
-    void sort(T[] array) {
+    public void sort(T[] array) {
         qsort(array, 0, array.length - 1);
     }
 
     @Override
-    void sort(List<T> list) {
+    public void sort(List<T> list) {
         qsort(list, 0, list.size() - 1);
     }
 

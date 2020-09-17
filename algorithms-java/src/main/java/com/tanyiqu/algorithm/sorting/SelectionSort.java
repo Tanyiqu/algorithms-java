@@ -9,12 +9,12 @@ import java.util.List;
 public class SelectionSort<T extends Comparable<T>> extends AbstractSort<T> {
 
     @Override
-    String name() {
+    public String name() {
         return "选择排序";
     }
 
     @Override
-    void sort(T[] array) {
+    public void sort(T[] array) {
         int length = array.length;
         for (int end = length - 1; end > 0; end--) {
             int maxIndex = 0;
@@ -31,7 +31,7 @@ public class SelectionSort<T extends Comparable<T>> extends AbstractSort<T> {
     }
 
     @Override
-    void sort(List<T> list) {
+    public void sort(List<T> list) {
         int length = list.size();
         for (int end = length - 1; end > 0; end--) {
             int maxIndex = 0;
