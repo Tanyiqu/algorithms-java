@@ -75,6 +75,16 @@ public class IntegerUtil {
         System.out.println(sb);
     }
 
+    public static Integer[] copy(Integer[] array) {
+        Integer[] array2 = new Integer[array.length];
+        int i = 0;
+        for (int integetr : array) {
+            array2[i] = integetr;
+            i++;
+        }
+        return array2;
+    }
+
     /**
      * 
      * 判断数组是否为升序
@@ -85,6 +95,22 @@ public class IntegerUtil {
     public static boolean isAscend(Integer[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             if (array[i] > array[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 
+     * 判断List是否为升序
+     * 
+     * @param list
+     * @return
+     */
+    public static boolean isAscend(List<Integer> list) {
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (list.get(i) > list.get(i + 1)) {
                 return false;
             }
         }
