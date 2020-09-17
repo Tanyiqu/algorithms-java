@@ -2,8 +2,6 @@ package com.tanyiqu.algorithm.sorting;
 
 import java.util.List;
 
-import com.tanyiqu.util.IntegerUtil;
-
 public class QuickSort<T extends Comparable<T>> extends AbstractSort<T> {
 
     @Override
