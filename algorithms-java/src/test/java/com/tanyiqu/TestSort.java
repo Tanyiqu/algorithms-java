@@ -17,6 +17,7 @@ public class TestSort {
         list.add(new SelectionSort<>());
         list.add(new QuickSort<>());
         list.add(new InsertionSort<>());
+        list.add(new MergeSort<>());
         test(list);
     }
 
